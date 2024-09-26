@@ -1,0 +1,14 @@
+### run ###
+1. velocity calculation
+roscore
+cd ~/catkin_ws/src/cv_final/scripts
+python3 bag_run.py
+
+2. estimate depth
+cd ~/Lite-Mono/docker
+./docker_start.sh
+cd ~/Lite-Mono
+python3 test_simple.py --image_path test_img/
+
+3. send signal
+kill -UER1 <process ID>
